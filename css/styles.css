@@ -1,0 +1,9 @@
+#results {
+  text-align: center;
+  font-size: 40px;
+  color: red;
+}
+
+#pic-results img {
+  display: none
+}

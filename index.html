@@ -1,11 +1,97 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
     <title>Character Quiz</title>
   </head>
 
   <body>
     <div class="container">
+      <h1>Which hug are you?</h1>
+
+      <form id="questions">
+          <div class="form-group">
+              <label for="user-name">Your name (for scientific hugging purposes only):</label>
+              <input id="user-name" class="form-control" type="text">
+          </div>
+
+          <div class="radio">
+            <h3>Question 1: Which of the following best describes you?</h3>
+            <label>
+              <input type="radio" name="quality" value="strong">
+              Strong and aggressively affectionate
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quality" value="down">
+              Down to earth...literally
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="quality" value="passion">
+              A passionate fiery mess
+            </label>
+          </div>
+
+          <div class="radio">
+            <h3>Question 2: What sticks out to you?</h3>
+            <label>
+              <input type="radio" name="likes" value="lumber">
+              Burly lumber jacks in plaid
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="likes" value="nature">
+              Mother Nature
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="likes" value="impulse">
+              Impulsive twitchy decision with life on the edge
+            </label>
+          </div>
+
+          <div class="radio">
+            <h3>Question 3: What is your hug philosophy?</h3>
+            <label>
+              <input type="radio" name="hugs" value="breathe">
+              Unless you're squeezin' the life outta someone, you ain't lovin' and ain't huggin
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="hugs" value="bark">
+              Prickly bark and bees nests couldn't keep your arms away
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="hugs" value="soundtrack">
+              When you hug, you have your own cinematic soundtrack playing because the world revolves around you now
+            </label>
+          </div>
+
+          <button class="btn" type="submit">Find out my inner hugger!</button>
+      </form>
+
+      <div id="results">
+
+      </div>
+
+      <div id="pic-results">
+        <img id="bear" src="img/bear.jpg">
+        <img id="tree" src="img/tree.jpg">
+        <img id="no-shame" src="img/unashamed.jpg">
+        <img id="side-hug" src="img/sidehug.gif">
+      </div>
+
     </div>
   </body>
 </html>
